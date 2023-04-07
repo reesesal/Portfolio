@@ -34,13 +34,20 @@ header {
   }
   
   .skip a {
+    display: block;
     position: absolute;
-    top: -40px;
-  }
+    left: -999px;
+    top: -999px;
+    }
 
-  .skip a:focus {
-    top: 20px;
-  }
+.skip a:focus {
+    left: 0;
+    top: 0;
+    padding: 3px;
+    background: #ffc;
+    border:1px solid #990000;
+    }
+    
 body{
     background-color: #d6d8fd;
     font-size: 18px;

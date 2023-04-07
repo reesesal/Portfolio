@@ -1,0 +1,63 @@
+/* Style for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .skip a {
+    position: absolute;
+    top: -40px;
+  }
+
+  .skip a:focus {
+    top: 20px;
+  }
+body{
+    background-color: #d6d8fd;
+    font-size: 18px;
+    line-height: 1.15;
+}
+
+.headings {
+    text-align: center;
+}
+
+img {
+    width:  300px;
+    height: 300px;
+}
+.album-covers {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+}

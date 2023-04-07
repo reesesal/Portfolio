@@ -1,0 +1,213 @@
+/* Style for the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+body{
+    background-color: #d6d8fd;
+    font-size: 18px;
+    line-height: 1.15;
+}
+
+.skip a {
+    position: absolute;
+    top: -40px;
+  }
+
+  .skip a:focus {
+    top: 20px;
+  }
+
+/*about page*/
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 20px;
+    padding: 20px;
+    border: 5px solid azure;
+}
+
+
+img {
+    max-height: 100%;
+    max-width: 70%;
+}
+
+.overview {
+    background-color: azure;
+    grid-column: 1 / span 3;
+    text-align: center;
+}
+
+.chicago-text {
+    grid-column: 1/ span 3;
+    text-align: center;
+}
+
+.chicago-cover {
+    grid-column: 1/ span 3;
+    text-align: center;
+}
+
+.chicago {
+    display: none;
+}
+
+
+.samba-text{
+    grid-column: 1/ span 3;
+    text-align: center;
+} 
+
+.samba-cover {
+    grid-column: 1/ span 3;
+    text-align: center;
+}
+
+.samba {
+    display: none;
+}
+
+.er-text {
+    grid-column: 1/ span 3;
+    text-align: center;
+}
+
+.er-cover {
+    grid-column: 1/ span 3;
+    text-align: center;
+}
+
+.er {
+    display: none;
+}
+
+
+.aa-text {
+    grid-column: 1/ span 3;
+    text-align: center;
+}
+
+.aa-cover {
+    grid-column: 1/ span 3;
+    text-align: center;
+}
+
+.aa {
+    display: none;
+}
+
+.florida-text {
+    grid-column: 1/ span 3;
+    text-align: center;
+}
+
+.florida-cover {
+    grid-column: 1/ span 3;
+    text-align: center;
+}
+
+.florida {
+    display: none;
+}
+
+
+
+
+/*
+@media screen and (min-width: 900px){
+    .chicago-text {
+        grid-column: 1/ span 2;
+    }
+
+    .chicago-cover {
+        grid-column: 3/ 4;
+    }
+
+    .chicago {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .samba-text{
+        grid-column: 1/3;
+    } 
+
+    .samba {
+        display: flex;
+    }
+
+    .samba-cover {
+        grid-column: 3/ 4;
+    }
+
+    .er-text {
+        grid-column: 1/3;
+    }
+
+    .er {
+        display: flex;
+    }
+
+    .er-cover {
+        grid-column: 3/4;
+    }
+
+    .aa-text {
+        grid-column: 1/3;
+    }
+
+    .aa {
+        display: flex;
+    }
+
+    .aa-cover {
+        grid-column: 3/4;
+    }
+
+    .florida-text {
+        grid-column: 1/3;
+    }
+
+    .florida {
+        display: flex;
+    }
+
+    .florida-cover {
+        grid-column: 3/4;
+    }
+}
+*/
+
+

@@ -87,7 +87,8 @@ img {
 }
 
 .chicago {
-    display: none;
+    grid-column: 1/ span 3;
+    text-align: center;
 }
 
 
@@ -102,7 +103,8 @@ img {
 }
 
 .samba {
-    display: none;
+    grid-column: 1/ span 3;
+    text-align: center;
 }
 
 .er-text {
@@ -116,7 +118,8 @@ img {
 }
 
 .er {
-    display: none;
+    grid-column: 1/ span 3;
+    text-align: center;
 }
 
 
@@ -131,7 +134,8 @@ img {
 }
 
 .aa {
-    display: none;
+    grid-column: 1/ span 3;
+    text-align: center;
 }
 
 .florida-text {
@@ -145,7 +149,8 @@ img {
 }
 
 .florida {
-    display: none;
+    grid-column: 1/ span 3;
+    text-align: center;
 }
 
 

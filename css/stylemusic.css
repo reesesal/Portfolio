@@ -1,53 +1,76 @@
 /* Style for the header */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    margin-right: 20px;
-  }
-  
-  nav li:last-child {
-    margin-right: 0;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  .skip a {
-    display: block;
-    position: absolute;
-    left: -999px;
-    top: -999px;
-    }
+ /* Default styles for header and nav */
+ header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 5px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+.skip a {
+  display: block;
+  position: absolute;
+  left: -999px;
+  top: -999px;
+}
 
 .skip a:focus {
-    left: 0;
-    top: 0;
-    padding: 3px;
-    background: #ffc;
-    border:1px solid #990000;
+  left: 0;
+  top: 0;
+  padding: 3px;
+  background: #ffc;
+  border:1px solid #990000;
+}
+
+ 
+  .active {
+    text-decoration: underline;
+    color: rgb(216, 179, 255);
+  }
+
+  body{
+      background-color: #d6d8fd;
+      font-size: 18px;
+      line-height: 1.15;
     }
-    
+  
+/*style for music page*/ 
+.text {
+  display: none;
+  position: relative;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px #888;
+}
+
 body{
     background-color: #d6d8fd;
     font-size: 18px;
@@ -56,15 +79,57 @@ body{
 
 .headings {
     text-align: center;
+    font-family: "DynaPuff", sans-serif;
+    color: #333;
+    font-size: 30px;
 }
 
-img {
-    width:  300px;
-    height: 300px;
-}
 .album-covers {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+}
+.album-covers img {
+  width:  300px;
+  height: 300px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+@media screen and (min-width: 550px){
+  header{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+  }
+
+  nav ul{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .album-covers {
     flex-direction: row;
+    justify-content: center;
+  }
+
+  .album-cover img {
+    margin: 0 10px 20px;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+  header {
+      align-items: flex-end;
+  } 
+
+  .album-covers img {
+    flex-basis: 0;
+    margin: 30px 10px 20px 30px;
+  }
 }
